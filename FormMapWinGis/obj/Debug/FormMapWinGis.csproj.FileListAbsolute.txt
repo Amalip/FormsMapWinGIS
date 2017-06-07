@@ -1,0 +1,14 @@
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\bin\Debug\FormMapWinGis.exe.config
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\Interop.MapWinGIS.dll
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\AxInterop.MapWinGIS.dll
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\FormMapWinGis.csproj.ResolveComReference.cache
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\bin\Debug\FormMapWinGis.exe
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\bin\Debug\FormMapWinGis.pdb
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\bin\Debug\Interop.MapWinGIS.dll
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\bin\Debug\AxInterop.MapWinGIS.dll
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\FormMapWinGis.csprojResolveAssemblyReference.cache
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\FormMapWinGis.Form1.resources
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\FormMapWinGis.Properties.Resources.resources
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\FormMapWinGis.csproj.GenerateResource.Cache
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\FormMapWinGis.exe
+C:\Users\amali\Google Drive\Backup\6to\Georeferencia\TercerParcial\FormMapWinGis\FormMapWinGis\obj\Debug\FormMapWinGis.pdb
