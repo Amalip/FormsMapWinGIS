@@ -13,6 +13,23 @@ namespace FormMapWinGis
         {
             InitializeComponent();
             GetMap();
+
+            this.AxMapi.PreviewKeyDown += delegate (object sender, PreviewKeyDownEventArgs e)
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.Left:
+                    case Keys.Right:
+                    case Keys.Up:
+                    case Keys.Down:
+                        e.IsInputKey = true;
+                        return;
+                }
+            };
+
+            txtLat.Enabled = false;
+            txtLng.Enabled = false;
+            btnGoLatLng.Enabled = false;
         }
         private int m_layerHandle = -1;
         void GetMap()
@@ -20,7 +37,6 @@ namespace FormMapWinGis
             AxMapi.Projection = tkMapProjection.PROJECTION_GOOGLE_MERCATOR;
             AxMapi.TileProvider = tkTileProvider.GoogleMaps;
             AxMapi.KnownExtents = tkKnownExtents.keMexico;
-
 
         }
 
@@ -84,17 +100,39 @@ namespace FormMapWinGis
             {
                 case 0:
                     AxMapi.CursorMode = tkCursorMode.cmPan;
+                    DisableLatLng();
                     break;
                 case 1:
                     AxMapi.CursorMode = tkCursorMode.cmZoomIn;
+                    DisableLatLng();
                     break;
                 case 2:
                     AxMapi.CursorMode = tkCursorMode.cmZoomOut;
+                    DisableLatLng();
                     break;
                 case 3:
                     AxMapi.CursorMode = tkCursorMode.cmIdentify;
+                    DisableLatLng();
+                    break;
+                case 4:
+                    AxMapi.CursorMode = tkCursorMode.cmMeasure;
+                    DisableLatLng();
+                    break;
+                case 5:
+                    txtLat.Enabled = true;
+                    txtLng.Enabled = true;
+                    btnGoLatLng.Enabled = true;
+                    button1.Enabled = false;
                     break;
             }
+        }
+
+        private void DisableLatLng()
+        {
+            button1.Enabled = true;
+            txtLat.Enabled = false;
+            txtLng.Enabled = false;
+            btnGoLatLng.Enabled = false;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -109,10 +147,33 @@ namespace FormMapWinGis
         }
         private void AxMapi_MouseDownEvent_1(object sender, _DMapEvents_MouseDownEvent e)
         {
-           
+
         }
 
+        private void btnGoLatLng_Click(object sender, EventArgs e)
+        {
+            float lat;
+            float lng;
+
+            float num;
+            bool bLat = float.TryParse(txtLat.Text, out num);
+            bool bLng = float.TryParse(txtLng.Text, out num);
+
+            if (bLat && bLng)
+            {
+                lat = float.Parse(txtLat.Text);
+                lng = float.Parse(txtLng.Text);
+
+                AxMapi.Latitude = lat;
+                AxMapi.Longitude = lng;
+                AxMapi.CurrentZoom = 12;
+            }
+            else
+            {
+                MessageBox.Show("Invalid Latitude & Longitude");
+            }
 
 
+        }
     }
 }
